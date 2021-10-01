@@ -1,0 +1,697 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+p{
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+.Ellipsis{
+    padding: 40% 0% 10% 25%;
+    grid-column: 2;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 500;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+/*Header Card*/
+.HeaderTitle{
+    display: grid;
+    grid-template-rows: 10vh 10vh;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    background-color: #514BF2;
+    border-radius: 25px;
+    z-index: 950;
+    margin-top: 25%;
+    right: 0%;
+    bottom: 35%;
+    left: 5%;
+    width: 20vw;
+    height: 40vh; 
+}
+.HeaderTitle p{
+    padding-left: 10%;
+}
+.HeaderTitle h3{
+    padding-left: 10%;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 24px;
+}
+.HeaderSub{
+    display: grid;
+    grid-template-rows: 10vh 5vh 5vh;
+    align-items: end;
+    position: absolute;
+    background-color: #191F40;
+    border-radius: 25px;
+    top: 60%;
+    right: 0%;
+    bottom: 40%;
+    left: 5%;
+    z-index: 900;
+    width: 20vw;
+    height: 25vh;
+}
+.HeaderSub #Daily{
+    padding-left: 10%;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+.HeaderSub #Weekly{
+    padding-left: 10%;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+.HeaderSub #Monthly{
+    padding-left: 10%;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+
+/*Work Card*/
+.Work{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "WTitle Ellipsis"
+                        "W_C_Daily ."
+                        "W_P_Daily .";
+    grid-template-areas: "WTitle Ellipsis" 
+                        "W_C_Weekly ." 
+                        "W_P_Weekly .";
+    grid-template-areas: "WTitle Ellipsis"
+                        "W_C_Monthly ."
+                        "W_P_Monthly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 0%;
+    bottom: 50%;
+    left: 30%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#WTitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#W_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;   
+}
+#W_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#W_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#W_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#W_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#W_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.WBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 0%;
+    bottom: 55%;
+    left: 30%;
+    z-index: 900;
+    background-color: orange;
+}
+
+/*Play Card*/
+.Play{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "PTitle Ellipsis"
+                        "P_C_Daily ."
+                        "P_P_Daily .";
+    grid-template-areas: "PTitle Ellipsis"
+                        "P_C_Weekly ."
+                        "P_P_Weekly .";
+    grid-template-areas: "PTitle Ellipsis"
+                        "P_C_Monthly ."
+                        "P_P_Monthly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 0%;
+    bottom: 50%;
+    left: 52.5%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#PTitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#P_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#P_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+#P_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#P_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#P_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#P_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.PBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 0%;
+    bottom: 55%;
+    left: 52.5%;
+    z-index: 900;
+    background-color: blue;
+}
+/*Study Card*/
+.Study{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "STitle Ellipsis"
+                        "S_C_Daily ."
+                        "S_P_Daily .";
+    grid-template-areas: "STitle Ellipsis"
+                        "S_C_Weekly ."
+                        "S_P_Weekly .";
+    grid-template-areas: "STitle Ellipsis"
+                        "S_C_Monthly ."
+                        "S_P_Monthly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 5%;
+    bottom: 50%;
+    left: 75%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#STitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#S_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#S_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+#S_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#S_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#S_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#S_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.SBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    margin-top: 25%;
+    right: 5%;
+    bottom: 55%;
+    left: 75%;
+    z-index: 900;
+    background: pink;
+}
+/*Exercise Card*/
+.Exercise{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "ETitle Ellipsis"
+                        "E_C_Daily ."
+                        "E_P_Daily .";
+    grid-template-areas: "ETitle Ellipsis"
+                        "E_C_Weekly ."
+                        "E_P_Weekly .";
+    grid-template-areas: "ETitle Ellipsis"
+                        "E_C_Monthly ."
+                        "E_P_Monthly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 65%;
+    right: 0%;
+    bottom: 40%;
+    left: 30%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#ETitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#E_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#E_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+#E_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#E_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#E_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#E_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.EBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 60%;
+    right: 0%;
+    bottom: 30%;
+    left: 30%;
+    z-index: 900;
+    background-color: green;
+}
+/*Social Card*/
+.Social{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "SoTitle Ellipsis"
+                        "So_C_Daily ."
+                        "So_P_Daily .";
+    grid-template-areas: "SoTitle Ellipsis"
+                        "So_C_Weekly ."
+                        "So_P_Weekly .";
+    grid-template-areas: "SoTitle Ellipsis"
+                        "So_C_Monthly ."
+                        "So_P_Monthly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 65%;
+    right: 0%;
+    bottom: 40%;
+    left: 52.5%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#SoTitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#So_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#So_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+#So_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#So_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#So_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#So_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.SoBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 60%;
+    right: 0%;
+    bottom: 30%;
+    left: 52.5%;
+    z-index: 900;
+    background-color: purple;
+}
+/*Self-Care Card*/
+.SelfCare{
+    position: absolute;
+    display: grid;
+    grid-template-areas: "ScTitle Ellipsis"
+                        "Sc_C_Daily ."
+                        "Sc_P_Daily .";
+    grid-template-areas: "ScTitle Ellipsis"
+                        "Sc_C_Weekly ."
+                        "Sc_P_Weekly .";
+    grid-template-areas: "ScTitle Ellipsis"
+                        "Sc_C_Weekly ."
+                        "Sc_P_Weekly .";
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 65%;
+    right: 0%;
+    bottom: 40%;
+    left: 75%;
+    z-index: 950;
+    background-color: #191F40;
+    color: white;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+}
+#ScTitle{
+    padding: 20% 0% 0% 15%;
+    grid-column: span 1/2;
+    align-self: center;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+#Sc_C_Daily{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik","sans-serif";
+    font-weight: 300;
+    font-size: 28px;    
+}
+#Sc_P_Daily{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+#Sc_C_Weekly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik","sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#Sc_P_Weekly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;
+}
+#Sc_C_Monthly{
+    padding: 0% 0% 0% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    color: white;
+    font-family: "Rubik","sans-serif";
+    font-weight: 300;
+    font-size: 28px;
+}
+#Sc_P_Monthly{
+    padding: 0% 0% 10% 15%;
+    grid-column: span 1/2;
+    justify-self: start;
+    font-family: "Rubik", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: #ABA4FF;    
+}
+.ScBackground{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 25px;
+    top: 60%;
+    right: 0%;
+    bottom: 30%;
+    left: 75%;
+    z-index: 900;
+    background-color: yellow;
+}
+
+/*Attribution*/
+.attribution{
+    position: absolute;
+    right: 25%;
+    bottom: 1%;
+    left: 25%;
+}

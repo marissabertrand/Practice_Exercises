@@ -1,0 +1,189 @@
+console.log("testing");
+
+/*Daily Hover*/
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $(this).css({color: "white"});
+    });
+    $("#Daily").mouseout(function(){
+        $(this).css({color: "#ABA4FF"});
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#W_C_Daily").show();
+        $("#W_P_Daily").show();
+        $("#W_C_Weekly").hide();
+        $("#W_P_Weekly").hide();
+        });
+    $("#Daily").mouseout(function(){
+        $("#W_C_Weekly").show();
+        $("#W_P_Weekly").show();
+        $("#W_C_Daily").hide();
+        $("#W_P_Daily").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#P_C_Daily").show();
+        $("#P_P_Daily").show();
+        $("#P_C_Weekly").hide();
+        $("#P_P_Weekly").hide();
+    });
+    $("#Daily").mouseout(function(){
+        $("#P_C_Weekly").show();
+        $("#P_P_Weekly").show();
+        $("#P_C_Daily").hide();
+        $("#P_P_Daily").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#S_C_Daily").show();
+        $("#S_P_Daily").show();
+        $("#S_C_Weekly").hide();
+        $("#S_P_Weekly").hide();
+    });
+    $("#Daily").mouseout(function(){
+        $("#S_C_Weekly").show();
+        $("#S_P_Weekly").show();
+        $("#S_C_Daily").hide();
+        $("#S_P_Daily").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#E_C_Daily").show();
+        $("#E_P_Daily").show();
+        $("#E_C_Weekly").hide();
+        $("#E_P_Weekly").hide();
+    });
+    $("#Daily").mouseout(function(){
+        $("#E_C_Weekly").show();
+        $("#E_P_Weekly").show();
+        $("#E_C_Daily").hide();
+        $("#E_P_Daily").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#So_C_Daily").show();
+        $("#So_P_Daily").show();
+        $("#So_C_Weekly").hide();
+        $("#So_P_Weekly").hide();
+    });
+    $("#Daily").mouseout(function(){
+        $("#So_C_Weekly").show();
+        $("#So_P_Weekly").show();
+        $("#So_C_Daily").hide();
+        $("#So_P_Daily").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Daily").mouseover(function(){
+        $("#Sc_C_Daily").show();
+        $("#Sc_P_Daily").show();
+        $("#Sc_C_Weekly").hide();
+        $("#Sc_P_Weekly").hide();
+    });
+    $("#Daily").mouseout(function(){
+        $("#Sc_C_Weekly").show();
+        $("#Sc_P_Weekly").show();
+        $("#Sc_C_Daily").hide();
+        $("#Sc_P_Daily").hide();
+    });
+});
+
+/*Monthly Hover*/
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $(this).css({color: "white"});
+    });
+    $("#Monthly").mouseout(function(){
+        $(this).css({color: "#ABA4FF"});
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#W_C_Monthly").show();
+        $("#W_P_Monthly").show();
+        $("#W_C_Weekly").hide();
+        $("#W_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#W_C_Weekly").show();
+        $("#W_P_Weekly").show();
+        $("#W_C_Monthly").hide();
+        $("#W_P_Monthly").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#P_C_Monthly").show();
+        $("#P_P_Monthly").show();
+        $("#P_C_Weekly").hide();
+        $("#P_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#P_C_Weekly").show();
+        $("#P_P_Weekly").show();
+        $("#P_C_Monthly").hide();
+        $("#P_P_Monthly").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#S_C_Monthly").show();
+        $("#S_P_Monthly").show();
+        $("#S_C_Weekly").hide();
+        $("#S_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#S_C_Weekly").show();
+        $("#S_P_Weekly").show();
+        $("#S_C_Monthly").hide();
+        $("#S_P_Monthly").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#E_C_Monthly").show();
+        $("#E_P_Monthly").show();
+        $("#E_C_Weekly").hide();
+        $("#E_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#E_C_Weekly").show();
+        $("#E_P_Weekly").show();
+        $("#E_C_Monthly").hide();
+        $("#E_P_Monthly").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#So_C_Monthly").show();
+        $("#So_P_Monthly").show();
+        $("#So_C_Weekly").hide();
+        $("#So_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#So_C_Weekly").show();
+        $("#So_P_Weekly").show();
+        $("#So_C_Monthly").hide();
+        $("#So_P_Monthly").hide();
+    });
+});
+$(document).ready(function(){
+    $("#Monthly").mouseover(function(){
+        $("#Sc_C_Monthly").show();
+        $("#Sc_P_Monthly").show();
+        $("#Sc_C_Weekly").hide();
+        $("#Sc_P_Weekly").hide();
+    });
+    $("#Monthly").mouseout(function(){
+        $("#Sc_C_Weekly").show();
+        $("#Sc_P_Weekly").show();
+        $("#Sc_C_Monthly").hide();
+        $("#Sc_P_Monthly").hide();
+    });
+});
